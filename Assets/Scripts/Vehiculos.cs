@@ -11,8 +11,7 @@ public class Vehiculos : MonoBehaviour
     public float HCppm;
 
     int añoActual = 2025;
-    float promedio;
-
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -50,9 +49,9 @@ public class Vehiculos : MonoBehaviour
             Debug.Log("VTV no aprobada, el HC ppm no puede ser mayor a 100");
             return;
         }
-   
+        
         else if (kilomtrosRecorridos / (añoActual - modelo) < 1000){
-            Debug.Log("VTV ororgada por 2 años");
+            Debug.Log("VTV otorgada por 2 años");
         }
         else if (kilomtrosRecorridos / (añoActual - modelo) > 1000)
         {
